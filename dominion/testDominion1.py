@@ -79,8 +79,7 @@ winners=[]
 for i in vp.index:
     if vp.loc[i]==vpmax:
         winners.append(i)
-# BUG: SHOULD BE > 1 not >= 1
-if len(winners)>=1:
+if len(winners)>1:
     winstring= ' and '.join(winners) + ' win!'
 else:
     winstring = ' '.join([winners[0],'wins!'])
